@@ -26,7 +26,7 @@ export const EXPERIENCES = [
     technologies: ["HTML", "CSS", "Javascript", "Nextjs", "Reactjs", "Vuejs", "Tailwind", "Bootstrap"],
   },
   {
-    year: "MAr 2021 - Dec 2023",
+    year: "Mar 2021 - Dec 2023",
     role: "Associate Engineer",
     company: "HTC Global Services",
     description: `
