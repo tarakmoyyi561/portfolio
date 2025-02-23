@@ -16,7 +16,7 @@ What excites me most is the opportunity to combine my technical expertise with c
 
 export const EXPERIENCES = [
   {
-    year: "Dec 2023 - Present",
+    year: "December 2023 - Present",
     role: "Software Engineer",
     company: "Sparsh Communications Pvt Ltd",
     description: `Architected and Developed dynamic, server-rendered components with Next.js, enhancing application scalability and improving load times by 40%.
@@ -26,7 +26,7 @@ export const EXPERIENCES = [
     technologies: ["HTML", "CSS", "Javascript", "Nextjs", "Reactjs", "Vuejs", "Tailwind", "Bootstrap"],
   },
   {
-    year: "Mar 2021 - Dec 2023",
+    year: "March 2021 - December 2023",
     role: "Associate Engineer",
     company: "HTC Global Services",
     description: `
