@@ -16,7 +16,7 @@ What excites me most is the opportunity to combine my technical expertise with c
 
 export const EXPERIENCES = [
   {
-    year: "December 2023 - Present",
+    year: "Dec 2023 - Present",
     role: "Software Engineer",
     company: "Sparsh Communications Pvt Ltd",
     description: `Architected and Developed dynamic, server-rendered components with Next.js, enhancing application scalability and improving load times by 40%.
@@ -26,7 +26,7 @@ export const EXPERIENCES = [
     technologies: ["HTML", "CSS", "Javascript", "Nextjs", "Reactjs", "Vuejs", "Tailwind", "Bootstrap"],
   },
   {
-    year: "March 2021 - December 2023",
+    year: "Mar 2021 - Dec 2023",
     role: "Associate Engineer",
     company: "HTC Global Services",
     description: `
@@ -39,7 +39,7 @@ export const EXPERIENCES = [
     technologies: ["HTML", "CSS", "Javascript", "Reactjs", "Redux", "Laravel", "PHP", "Bootstrap", "Ant Design", "Material UI"],
   },
   {
-    year: "March 2020 - June 2020",
+    year: "Mar 2020 - Jun 2020",
     role: "Intern",
     company: "VISHIST Business Solutions Pvt Ltd",
     description: ` Worked on Java Web Application Development.Created with the tech stack listed below:
