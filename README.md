@@ -1,21 +1,30 @@
-<<<<<<< HEAD
-# portfolio
-=======
-# Portfolio of Manoj Odela
+# 🌐 Tarak Moyyi – Personal Portfolio
 
-Welcome to my portfolio! This project showcases my work, skills, and experiences as a Front End Developer.
+Welcome to my personal portfolio website, built with modern web technologies to showcase my projects, skills, and experiences as a Software Engineer.
 
-## Features
+🔗 **Live Site**: [https://tarakmoyyi.vercel.app](https://tarakmoyyi.vercel.app)
 
-- Responsive design for optimal viewing on all devices
-- Integrated social media links
-- Downloadable resume
-- Smooth animations and transitions
+---
 
-## Technologies Used
+## 🚀 Features
 
-- **Frontend:**
-  - React
-  - Tailwind CSS
-  - Framer Motion (for animations)
->>>>>>> ca412809ff21b231eade0546e5105d6e4292b1a6
+- Responsive and modern design
+- Projects showcase
+- Contact form
+- Smooth navigation
+- Deployed on **Vercel**
+
+---
+
+## 📁 Project Structure
+
+```bash
+portfolio/
+├── public/             # Static assets
+├── src/                # Main source code
+│   ├── components/     # Reusable components
+│   ├── pages/          # Portfolio pages (Home, About, Contact)
+│   ├── styles/         # CSS/SCSS files
+│   └── App.js          # Main app entry
+├── package.json
+└── README.md
