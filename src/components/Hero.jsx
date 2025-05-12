@@ -1,7 +1,8 @@
 import { HERO_CONTENT } from "../constants"
-import profilePic from "../assets/ProfilePic.jpeg";
+import profilePic from "../assets/ProfilePic.jpg";
 import { motion } from "framer-motion"
-import Resume from '../assets/ManojOdela_React_4.pdf'
+import Resume from '../assets/Moyyi_Tarakeswara_Rao_php_Resume.pdf'
+
 const container = (delay) => ({
    hidden: { x: -100, opacity: 0 },
    visible: {
@@ -23,14 +24,14 @@ function Hero() {
                      animate="visible"
                      className='pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl'
                   >
-                     Manoj Odela
+                     Tarak Moyyi
                   </motion.h1>
                   <motion.span
                      variants={container(0.5)}
                      initial='hidden'
                      animate="visible"
                      className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent'>
-                     Software Engineer
+                     Senior Software Engineer
                   </motion.span>
                   <motion.p
                      variants={container(1)}
@@ -40,7 +41,7 @@ function Hero() {
                      {HERO_CONTENT}
                   </motion.p>
                   <div>
-                     <a href={Resume} download="Manoj_Odela_Resume.pdf" className='w-6 h-6 md:w-8 md:h-8'>
+                     <a href={Resume} download="Tarak_Moyyi_Resume.pdf" className='w-6 h-6 md:w-8 md:h-8'>
                         <button className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-slate-400 via-fuchsia-300 text-white mb-4">
                            <span className='block bg-zinc-800 hover:bg-zinc-400 rounded-full px-5 py-2'> Download Resume</span>
                         </button>
@@ -57,7 +58,7 @@ function Hero() {
                      transition={{ duration: 1, delay: 1.2 }}
                      className="shadow-lg shadow-gray-500"
                      src={profilePic}
-                     alt="Manoj Odela" />
+                     alt="Tarak Moyyi" />
                </div>
             </div>
          </div>

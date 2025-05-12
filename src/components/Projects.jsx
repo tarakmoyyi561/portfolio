@@ -22,7 +22,7 @@ function Projects() {
               width={150}
               height={150}
               alt={project.title}
-              className="mb-6 rounded">
+              className="mb-6 rounded hover:scale-105 transition-transform duration-300">
             </img>
           </motion.div>
           <motion.div
@@ -31,17 +31,44 @@ function Projects() {
             transition={{ duration: 1 }}
             className='w-full max-w-xl lg:w-3/4'>
             <h6 className='mb-2 font-semibold'>{project.title}</h6>
-            <p className='mb-4 text-neutral-400'>{project.description}</p>
-            {project.technologies.map((tech, index) => (
-              <span key={index}
-                className='mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900'>
-                {tech}
-              </span>
-            ))}
+            <p className='mb-2 text-sm text-neutral-400'>{project.duration}</p>
+            {/* Render description as a list */}
+            <ul className='mb-4 list-disc pl-5 text-neutral-400'>
+              {project.description.map((desc, index) => (
+                <li key={index}>{desc}</li>
+              ))}
+            </ul>
+            {/* Render technologies */}
+            <div className='mb-4'>
+              {project.technologies.map((tech, index) => (
+                <span key={index}
+                  className='mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900 hover:bg-purple-800 hover:text-white transition-colors duration-300'>
+                  {tech}
+                </span>
+              ))}
+            </div>
+            {/* Add links */}
+            {project.demo && (
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className='mr-4 text-sm text-blue-500 hover:underline'>
+                Live Demo
+              </a>
+            )}
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className='text-sm text-blue-500 hover:underline'>
+                GitHub
+              </a>
+            )}
           </motion.div>
         </div>
-      ))}
-      </div>
+      ))}</div>
     </div>
   )
 }

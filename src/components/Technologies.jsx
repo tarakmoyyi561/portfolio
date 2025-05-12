@@ -1,28 +1,88 @@
-import React from 'react'
-import { RiReactjsLine } from "react-icons/ri";
-import { RiHtml5Line } from "react-icons/ri";
-import { RiCss3Line } from "react-icons/ri";
-import { RiJavascriptFill } from "react-icons/ri";
-import { RiTailwindCssLine } from "react-icons/ri";
-import { RiBootstrapFill } from "react-icons/ri";
-import { RiNodejsFill } from "react-icons/ri";
-import { RiNextjsFill } from "react-icons/ri";
+import React from 'react';
+import { motion } from 'framer-motion';
+import {
+  FaPhp, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaLaravel,
+  FaGithub, FaStripe, FaPaypal, FaJira, FaAws, FaDatabase,
+  FaCode, FaShoppingCart, FaLaptopCode, FaServer
+} from 'react-icons/fa';
+import {
+  SiJquery, SiJson, SiCodeigniter, SiPostman, SiApache, SiMysql, SiNginx
+} from 'react-icons/si';
+import { GiArtificialIntelligence, GiReceiveMoney } from 'react-icons/gi';
+import { MdOutlineSecurity } from 'react-icons/md';
+import { TbApi } from 'react-icons/tb';
 
-import { motion } from "framer-motion"
-import { GrMysql } from 'react-icons/gr';
-
-const iconVariants = (duration) => ({
-  initial: { y: -10 },
-  animate: {
-    y: [10, -10],
-    transition: {
-      duration: duration,
-      ease: "linear",
-      repeat: Infinity,
-      repeatType: "reverse",
-    }
+const categories = [
+  {
+    title: 'Web Technologies',
+    skills: [
+      { icon: <FaPhp className='text-6xl text-indigo-600' />, name: 'PHP' },
+      { icon: <FaNodeJs className='text-6xl text-green-600' />, name: 'Node.js' },
+      { icon: <SiJquery className='text-6xl text-blue-500' />, name: 'jQuery' },
+      { icon: <FaHtml5 className='text-6xl text-orange-600' />, name: 'HTML' },
+      { icon: <FaCss3Alt className='text-6xl text-blue-600' />, name: 'CSS3' },
+    ],
   },
-});
+  {
+    title: 'Programming',
+    skills: [
+      { icon: <FaJs className='text-6xl text-yellow-400' />, name: 'JavaScript' },
+      { icon: <SiJson className='text-6xl text-yellow-700' />, name: 'JSON' },
+      { icon: <TbApi className='text-6xl text-teal-500' />, name: 'RESTful APIs' },
+    ],
+  },
+  {
+    title: 'Frameworks',
+    skills: [
+      { icon: <FaLaravel className='text-6xl text-red-500' />, name: 'Laravel' },
+      { icon: <SiCodeigniter className='text-6xl text-orange-500' />, name: 'CodeIgniter' },
+    ],
+  },
+  {
+    title: 'Database',
+    skills: [
+      { icon: <SiMysql className='text-6xl text-blue-500' />, name: 'MySQL' },
+      { icon: <FaDatabase className='text-6xl text-green-600' />, name: 'SQL' },
+    ],
+  },
+  {
+    title: 'Version Control & Testing',
+    skills: [
+      { icon: <FaGithub className='text-6xl text-white' />, name: 'GitHub' },
+      { icon: <SiPostman className='text-6xl text-orange-600' />, name: 'Postman' },
+      { icon: <FaCode className='text-6xl text-purple-400' />, name: 'Unit Testing' },
+      { icon: <MdOutlineSecurity className='text-6xl text-pink-500' />, name: 'Code Review' },
+    ],
+  },
+  {
+    title: 'Tools & Cloud',
+    skills: [
+      { icon: <FaAws className='text-6xl text-yellow-500' />, name: 'AWS S3' },
+      { icon: <FaServer className='text-6xl text-green-400' />, name: 'Linode' },
+      { icon: <FaStripe className='text-6xl text-indigo-500' />, name: 'Stripe' },
+      { icon: <FaPaypal className='text-6xl text-blue-500' />, name: 'PayPal' },
+      { icon: <GiReceiveMoney className='text-6xl text-orange-500' />, name: 'Bill Desk' },
+      { icon: <FaJira className='text-6xl text-[#0052CC]' />, name: 'JIRA' },
+      { icon: <GiArtificialIntelligence className='text-6xl text-green-400' />, name: 'ChatGPT - AI' },
+    ],
+  },
+  {
+    title: 'Web Server',
+    skills: [
+      { icon: <SiApache className='text-6xl text-red-600' />, name: 'Apache' },
+      { icon: <SiNginx className='text-6xl text-green-500' />, name: 'Nginx' },
+    ],
+  },
+  {
+    title: 'Other Skills',
+    skills: [
+      { icon: <FaCode className='text-6xl text-cyan-400' />, name: 'Payment Gateway Integration' },
+      { icon: <FaLaptopCode className='text-6xl text-yellow-400' />, name: 'ERP Systems' },
+      { icon: <FaShoppingCart className='text-6xl text-green-400' />, name: 'eCommerce Platforms' },
+    ],
+  },
+];
+
 function Technologies() {
   return (
     <div className='border-b border-neutral-800 pb-24'>
@@ -30,78 +90,33 @@ function Technologies() {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className='my-20 text-center text-4xl'>Technologies</motion.h1>
-      <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 1, x: -100 }}
-        transition={{ duration: 1.5 }}
-        className='flex flex-wrap items-center justify-center gap-4'>
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <RiReactjsLine className='text-7xl text-cyan-400' />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <RiNextjsFill className='text-7xl text-cyan-400' />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <RiHtml5Line className='text-7xl text-[#DD4B25]' />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(5)}
-          initial="initial"
-          animate="animate"
-          className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <RiCss3Line className='text-7xl text-[#254BDD]' />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <RiJavascriptFill className='text-7xl text-[#EFD81D]' />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <RiTailwindCssLine className='text-7xl text-[#23ADB8]' />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <RiBootstrapFill className='text-7xl text-[#8712F3]' />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <RiNodejsFill className='text-7xl text-[#4D7C9B]' />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <GrMysql className='text-7xl text-green-500' />
-        </motion.div>
-      </motion.div>
+        className='my-20 text-center text-4xl'>
+        Technologies
+      </motion.h1>
+      <div className='space-y-12'>
+        {categories.map((category, index) => (
+          <div key={index}>
+            <h2 className='mb-6 text-2xl font-semibold text-center'>{category.title}</h2>
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 1.5 }}
+              className='flex flex-wrap items-center justify-center gap-6'>
+              {category.skills.map((skill, idx) => (
+                <motion.div
+                  key={idx}
+                  whileHover={{ scale: 1.1 }}
+                  className='flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4'>
+                  {skill.icon}
+                  <p className='mt-2 text-sm text-neutral-400'>{skill.name}</p>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        ))}
+      </div>
     </div>
-  )
+  );
 }
 
-export default Technologies
+export default Technologies;

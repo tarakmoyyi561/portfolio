@@ -23,7 +23,10 @@ function Contacts() {
         transition={{duration:1}}>
             {CONTACT.phoneNo}
             </motion.p>
-            <a href='mailto:odelamanoj123@gmail.com' className='border-b'>{CONTACT.email}</a>
+            <a href='mailto:tarakmoyyi@gmail.com' className='border-b'>{CONTACT.email}</a>
+        </div>
+        <div className='text-center tracking-tighter'>
+        {CONTACT.phone}
         </div>
     </div>
   )

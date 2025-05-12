@@ -1,107 +1,183 @@
-import maisonava from "../assets/projects/maisonava.png";
-import dilipsindia from "../assets/projects/dilipsindia.png"
-import kanha from "../assets/projects/kanha.png"
-import healthportal from "../assets/projects/healthportal.png"
+import maisonava from '../assets/projects/maisonava.png';
+import ringBuilder from '../assets/projects/ringbuilder.png';
+import jewelCounter from '../assets/projects/jewelcounter.png';
+import nsutErp from '../assets/projects/nsit.png';
+import irsm from '../assets/projects/irsm.png';
+import thomsonPress from '../assets/projects/thomsonpress.jpg';
+import pbl from '../assets/projects/pbl.png';
 
-export const HERO_CONTENT = `I am a passionate FrontEnd developer with a talent for crafting responsive and maintainable web applications.With 4+ years of hands-on experience in modern JavaScript frameworks like React, Next, Redux, and a strong background in integrating RESTful APIs, I aim to leverage my skills to create innovative and user-centric solutions that enhance productivity and user engagement.`;
-export const ABOUT_TEXT = `I am a  Software Engineer with a passion for crafting seamless, user-focused web applications that drive both business growth and customer satisfaction. With a solid foundation in React.js, Next.js, and state management tools like ContextAPI and Redux Toolkit, I specialize in building responsive and scalable solutions that deliver exceptional performance across devices.
-Currently at Sparsh Communications, I focus on optimizing front-end performance using cutting-edge techniques like lazy loading, dynamic imports, and prefetching. I take pride in creating dynamic, accessible interfaces using React.js, Nextjs, Tailwind CSS, and robust design systems, ensuring compliance with WCAG guidelines for inclusivity.
 
 
-Previously at HTC Global Services, I collaborated with cross-functional teams to build reusable React components, design intuitive user experiences, and integrate RESTful APIs for dynamic, data-driven web applications. My contributions led to significant improvements in productivity, user interaction speeds, and application maintainability.
+// src/constants/index.js
 
-In addition to professional roles, I have spearheaded innovative projects like a Traveller, Moboom, and an E-Commerce Platform, where I implemented advanced features such as search, filtering, and real-time updates, enhancing user engagement and functionality.
-My technical skill set spans JavaScript (ES6+), HTML5, CSS3, Node.js, Redux and modern frameworks like Tailwind CSS and Bootstrap. I’m also experienced with performance optimization, dynamic workflows, and Agile collaboration.
-What excites me most is the opportunity to combine my technical expertise with creative problem-solving to deliver impactful solutions that meet both user needs and business objectives. When I’m not coding, I’m exploring new technologies, learning about design systems, or diving into a good tech blog.`;
+export const HERO_CONTENT = `Hi, I’m Tarak Moyyi  
+Senior Software Engineer
+
+I specialize in building secure, scalable web applications using PHP, Laravel, and Node.js.
+      With over a decade of experience, I’ve delivered enterprise-grade ERP and eCommerce platforms.
+      I enjoy translating business needs into performant backend systems and APIs.
+      My approach is user-focused, performance-driven, and clean-code oriented.
+      I’ve worked extensively with MySQL, JavaScript, Bootstrap, and RESTful APIs.
+      From cloud deployments on AWS and Linode to integrating Stripe and PayPal, I cover it all.
+      I'm constantly improving and keeping up with tech trends like AI tools and automation.
+      Whether collaborating with teams or owning end-to-end delivery, I get the job done.
+      Let’s work together to turn your next project into a real-world success.`;
+
+export const ABOUT_TEXT = `I’m a passionate software engineer with 10+ years of experience in web development and backend architecture.
+      I’ve built applications for industries ranging from education to eCommerce and enterprise finance.
+      My core stack includes Laravel, PHP, MySQL, CodeIgniter, and JavaScript, backed by strong API design skills.
+      I'm known for building maintainable, testable systems with strong version control and documentation.
+      At Sparsh and Plum Soft, I led multiple full-cycle projects with a focus on scalable architecture and security.
+      I'm comfortable integrating payment gateways like Stripe, PayPal, and BillDesk with ease.
+      Tools like Postman, JIRA, GitHub, and AWS are part of my everyday workflow.
+      I value clean design patterns, code reviews, and continual improvement.
+      I believe in crafting software that solves real problems and adapts to user needs.
+      When not coding, I enjoy exploring AI tools and cloud optimization strategies.`;
+
+export const TECH_STACK = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'PHP',
+  'Laravel',
+  'CodeIgniter',
+  'MySQL',
+  'Bootstrap',
+  'Git',
+];
 
 export const EXPERIENCES = [
   {
-    year: "Dec 2023 - Present",
-    role: "Software Engineer",
-    company: "Sparsh Communications Pvt Ltd",
-    description: `Architected and Developed dynamic, server-rendered components with Next.js, enhancing application scalability and improving load times by 40%.
-    Used ChatGPT to generate reusable React components, reducing development time by 40%.
-    Designed and implemented reusable UI components using React.js and Tailwind CSS, streamlining development workflows and boosting maintainability.
-    Diagnosed and resolved critical performance bottlenecks by leveraging systematic debugging and performance profiling, achieving a 30% improvement in overall application stability.`,
-    technologies: ["HTML", "CSS", "Javascript", "Nextjs", "Reactjs", "Vuejs", "Tailwind", "Bootstrap"],
+    year: '2021 – Present',
+    role: 'Senior Software Engineer',
+    company: 'Sparsh Communications',
+    description: [
+      'Spearheaded API development for user activities, marketplace functionality, cart, and order management, supporting over 100K concurrent users.',
+      'Conducted Stripe and PayPal payment integrations, enabling secure and seamless eCommerce transactions.',
+      'Leveraged AI for dynamic image generation, enhancing user experience with personalized and automated visuals.',
+      'Upgraded Laravel frameworks from v5 to v9 and implemented 3D modeling integrations.',
+      'Optimized code to support 100,000 concurrent users, improving platform performance.',
+      'Delivered tailored solutions with advanced features like multi-currency support and payment integrations.',
+    ],
+    technologies: ['Laravel', 'PHP', 'Node.js', 'Stripe', 'AWS', 'MySQL', 'GitHub'],
   },
   {
-    year: "Mar 2021 - Dec 2023",
-    role: "Associate Engineer",
-    company: "HTC Global Services",
-    description: `
-    Spearheaded the translation of UI/UX design to actual code which resulted in an enhanced user interface.
-    Managed complex application state using Redux and Context API, ensuring seamless state synchronization.
-    Increased application performance by 45% using memoization, debouncing, and virtual DOM optimizations.
-    Ensured WCAG compliance, making applications accessible to a wider audience
-    Enhanced application performance through optimization and lazy loading.
-    `,
-    technologies: ["HTML", "CSS", "Javascript", "Reactjs", "Redux", "Laravel", "PHP", "Bootstrap", "Ant Design", "Material UI"],
+    year: '2021 (Contract)',
+    role: 'Full Stack Developer',
+    company: 'Avanto Technologies',
+    description: [
+      'Designed and developed a Laravel-based diamond customization platform with advanced product logic.',
+      'Integrated Razorpay payments, achieving a 95% success rate in transactions.',
+      'Implemented real-time ring builder workflows, enhancing user experience and reducing customization time by 25%.',
+    ],
+    technologies: ['Laravel', 'JavaScript', 'Razorpay', 'MySQL'],
   },
   {
-    year: "Mar 2020 - Jun 2020",
-    role: "Intern",
-    company: "VISHIST Business Solutions Pvt Ltd",
-    description: ` Worked on Java Web Application Development.Created with the tech stack listed below:
-    IDE : Eclipse 
-    Programming Language : Java, React
-    API's Development using Springboot and  Hibernate ORM
-    Database : MySql `,
-    technologies: ["Reactjs", "Java", "MYSQL"],
+    year: '2012 – 2021',
+    role: 'Senior PHP Developer',
+    company: 'Plum Soft Solutions',
+    description: [
+      'Delivered multiple ERP modules for HR, payroll, finance, student management, and fee processing.',
+      'Managed full-cycle implementation of university and school systems.',
+      'Integrated BillDesk and SBI payment gateways, ensuring secure and seamless transactions.',
+    ],
+    technologies: ['Laravel', 'CodeIgniter', 'PHP', 'MySQL', 'Bootstrap'],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "Maison Ava",
+    title: 'Maisonava (E-Commerce Platform)',
+    duration: '06/2024 – Present',
+    description: [
+      'Developed backend APIs supporting user activities, marketplace features, and cart functionality.',
+      'Integrated Stripe and PayPal for secure payment processing.',
+    ],
+    technologies: ['Node.js', 'APIs'],
     image: maisonava,
-    description:
-      `Maison Ava is a luxury children's clothing brand specializing in handcrafted couture for boys and girls.
-      Founded by New York-based designer Viranica Manchu, the brand emphasizes exquisite craftsmanship,
-      utilizing the world's most luxurious fabrics and intricate embellishments to create youthful yet
-      sophisticated designs.`,
-    technologies: ["HTML", "TailwindCSS", "Nextjs", "Redux", "JavaScript"],
+    demo: 'https://maisonava.com',
   },
   {
-    title: "Dilipsindia",
-    image: dilipsindia,
-    description:
-      `DilipsIndia is a leading manufacturer of high-quality chrome-plated (CP) bathroom fittings,
-      combining international quality standards with exquisite design. Established in 2006, the company
-      boasts over 14 years of experience in the hardware industry, delivering premium products for modern
-      bathrooms.`,
-    technologies: ["HTML", "TailwindCSS", "React", "JavaScript"],
+    title: 'Ring Builder (AI Image Generation)',
+    duration: '2023 – 2024',
+    description: [
+      'Engineered unique image generation with AI (ChatGPT), allowing dynamic jewelry designs based on user prompts.',
+      'Expanded product customization capabilities for bespoke jewelry.',
+    ],
+    technologies: ['PHP', 'Laravel', 'APIs', 'ReactJS'],
+    image: ringBuilder,
+    demo: 'https://www.dazl.design/custom_designer',
   },
   {
-    title: "Kanha Proposal Portal",
-    image: kanha,
-    description:
-      `Heartfulness Kanha Proposal Portal is indeed a matrimonial site specifically designed for individuals who are
-      registered with the Heartfulness organization. It is a platform where Heartfulness practitioners can
-      connect with like-minded individuals for the purpose of marriage, based on shared spiritual values and
-      practices.`,
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "React", "PHP", "Laravel"],
+    title: 'Jewel Counter (E-Commerce Platform)',
+    duration: '2021 – 2023',
+    description: [
+      'Implemented user management, marketplace, bespoke jewelry, order management, pricing configuration, and multi-currency management.',
+      'Designed well-structured databases and optimized code.',
+      'Integrated Stripe for payments and upgraded Laravel from version 5 to 9.',
+      'Enabled image generation using 3dm and STL file uploads.',
+      'Used Jira for project management and performed unit testing, code reviews, and deployments.',
+      'Managed media file storage in AWS S3 and Rackspace multi-cloud storage.',
+      'Monitored Linode load balancer and handled SSL updates and subdomain creation.',
+    ],
+    technologies: ['PHP', 'Laravel', 'MySQL', 'AWS S3', 'Stripe', 'Jira'],
+    image: jewelCounter,
+    demo: 'https://app.jewelcounter.com/dashboard',
   },
   {
-    title: "Union Health Patient Portal",
-    image: healthportal,
-    description:
-      `The Union Health Patient Portal is a secure online platform that enables patients to access their personal health information and communicate with healthcare providers.
-      Through the portal, patients can view portions of their medical records, including test results, medications, and visit history. Additionally, the portal offers tools for non-urgent communication,
-      such as requesting prescription refills and scheduling appointments. `,
-    technologies: ["HTML", "CSS", "JavaScript", "React", "Ant Design", "Bootstrap",],
+    title: 'NSUT ERP (University Management System)',
+    duration: '2018 – 2021',
+    description: [
+      'Developed a complete lifecycle system for students, faculty, and staff.',
+      'Implemented modules for fee management, admit card generation, examinations, results, and hostel management.',
+      'Built dynamic sites for competitive exams and recruitment processes.',
+      'Integrated BillDesk and SBI payment gateways.',
+    ],
+    technologies: ['PHP', 'MySQL', 'JavaScript', 'jQuery', 'APIs'],
+    image: nsutErp,
+    demo: 'https://www.imsnsit.org/',
   },
-  // {
-  //   title: "Portfolio Website",
-  //   image: portfolio,
-  //   description:
-  //     "A personal portfolio website showcasing projects, skills, and contact information.",
-  //   technologies: ["HTML", "CSS", "React", "Tailwind", "Framer Motion"],
-  // },
+  {
+    title: 'IRSM (ERP - Indian Road Survey Management)',
+    duration: '2016 – 2018',
+    description: [
+      'Implemented task management, project management, and inventory management.',
+      'Developed HR and accounts modules for streamlined operations.',
+    ],
+    technologies: ['PHP', 'MySQL', 'JavaScript', 'jQuery', 'APIs'],
+    image: irsm,
+    demo: 'http://plumware.in/irsm/do.php?pw=_3Su_ODFeq.StS',
+  },
+  {
+    title: 'Thomson Press (ERP)',
+    duration: '2014 – 2016',
+    description: [
+      'Implemented inventory management, sales, purchase, and assets management.',
+      'Developed HR and accounts modules, including order management for digital systems.',
+      'Provided IMS reports, account ledgers, and trial balances.',
+      'Created a unique order management dashboard for real-time order status tracking.',
+    ],
+    technologies: ['PHP', 'MySQL', 'JavaScript', 'jQuery', 'APIs'],
+    image: thomsonPress,
+    demo: 'http://plumdatum.com/thomsonpress/index2.htm',
+  },
+  {
+    title: 'PBL (ERP - PBL Transport Corporation Private Ltd)',
+    duration: '2012 – 2014',
+    description: [
+      'Developed and supported modules for trip sheets, sales, purchase, and store management.',
+      'Implemented vehicle tracking and HR payroll systems.',
+    ],
+    technologies: ['PHP', 'MySQL', 'JavaScript', 'jQuery', 'APIs'],
+    image: pbl,
+    demo: 'https://pbltransport.net/prod/pblbee/login',
+  },
 ];
 
 export const CONTACT = {
-  address: "Hyderabad ",
-  phoneNo: "+91 8019425119",
-  email: "odelamanoj123@gmail.com",
+  email: 'tarakmoyyi@gmail.com',
+  phone: '+91-9160694616',
+  location: 'Hyderabad, India',
 };
+
