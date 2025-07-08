@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/MyLogo.jpg';
+import logo from '../assets/MyLogo.png';
 import { FaLinkedin, FaGithub,  FaInstagram } from 'react-icons/fa';
 function Navbar() {
   return (
