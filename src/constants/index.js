@@ -6,8 +6,6 @@ import irsm from '../assets/projects/irsm.png';
 import thomsonPress from '../assets/projects/thomsonpress.jpg';
 import pbl from '../assets/projects/pbl.png';
 
-
-
 // src/constants/index.js
 
 export const HERO_CONTENT = `Hi, I’m Tarak Moyyi  
