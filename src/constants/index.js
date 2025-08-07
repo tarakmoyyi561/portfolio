@@ -48,10 +48,19 @@ export const TECH_STACK = [
 ];
 
 export const EXPERIENCES = [
-  {
-    year: '2021 – Present',
+   {
+    year: '2025 – Present',
     role: 'Senior Software Engineer',
-    company: 'Sparsh Communications',
+    company: 'Gravity Cybertech Pvt Ltd.',
+    description: [
+      
+    ],
+    technologies: ['Laravel', 'Vue js', 'PHP', 'Node.js', 'MySQL', 'GitHub'],
+  },
+  {
+    year: '2021 – 2025',
+    role: 'Team Lead - Senior Software Engineer',
+    company: 'Sparsh Communications Pvt. Ltd.',
     description: [
       'Spearheaded API development for user activities, marketplace functionality, cart, and order management, supporting over 100K concurrent users.',
       'Conducted Stripe and PayPal payment integrations, enabling secure and seamless eCommerce transactions.',
@@ -60,7 +69,7 @@ export const EXPERIENCES = [
       'Optimized code to support 100,000 concurrent users, improving platform performance.',
       'Delivered tailored solutions with advanced features like multi-currency support and payment integrations.',
     ],
-    technologies: ['Laravel', 'PHP', 'Node.js', 'Stripe', 'AWS', 'MySQL', 'GitHub'],
+    technologies: ['Laravel', 'PHP', 'Node.js', 'Stripe', 'AWS', 'MySQL', 'SQL', 'GitHub', 'Jira'],
   },
   {
     year: '2021 (Contract)',
