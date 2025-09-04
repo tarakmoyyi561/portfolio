@@ -6,7 +6,7 @@ import {
   FaCode, FaShoppingCart, FaLaptopCode, FaServer
 } from 'react-icons/fa';
 import {
-  SiJquery, SiJson, SiCodeigniter, SiPostman, SiApache, SiMysql, SiNginx
+  SiJquery, SiJson, SiCodeigniter, SiPostman, SiApache, SiMysql, SiNginx, SiElasticsearch
 } from 'react-icons/si';
 import { GiArtificialIntelligence, GiReceiveMoney } from 'react-icons/gi';
 import { MdOutlineSecurity } from 'react-icons/md';
