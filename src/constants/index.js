@@ -51,7 +51,7 @@ export const EXPERIENCES = [
     role: 'Senior Software Engineer',
     company: 'Gravity Cybertech Pvt Ltd.',
     description: [
-      
+      'Explored and implemented Elasticsearch with Logstash for real-time data indexing and advanced search functionalities.'
     ],
     technologies: ['Laravel', 'Vue js', 'PHP', 'Node.js', 'MySQL', 'GitHub'],
   },
