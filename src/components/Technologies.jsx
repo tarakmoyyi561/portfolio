@@ -43,6 +43,7 @@ const categories = [
     skills: [
       { icon: <SiMysql className='text-6xl text-blue-500' />, name: 'MySQL' },
       { icon: <FaDatabase className='text-6xl text-green-600' />, name: 'SQL' },
+      { icon: <SiElasticsearch className='text-6xl text-orange-500' />, name: 'Elasticsearch' },
     ],
   },
   {
